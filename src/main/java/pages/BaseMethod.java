@@ -43,6 +43,8 @@ public class BaseMethod {
 
     public void scrollToPage(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1000)");
+        js.executeScript("window.scrollBy(0,2300)");
+        js.executeScript("window.scrollBy(0,5000)");
+
     }
 }

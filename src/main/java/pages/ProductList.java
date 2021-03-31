@@ -18,10 +18,6 @@ public class ProductList extends BaseMethod {
     }
 
     public void addToBasketProduct()  {
-        JavascriptExecutor js = ((JavascriptExecutor) driver);
-        js.executeScript("scrollTo(0, 2300");
-        js.executeScript("scrollTo(0, 5000");
-
         List<WebElement> productList =  driver.findElements(addToBasket);
         productList.get(0).click();
 

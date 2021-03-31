@@ -17,6 +17,7 @@ public class AddBasketAndSignUpTest extends BaseTest{
         HomePage homePage = new HomePage(driver);
         homePage.goToHomePage();
         ProductList productList =  homePage.goToTvDisplayAndSound();
+        productList.scrollToPage();
         productList.addToBasketProduct();
         String productTitle = productList.getProductTitle();
         BasketPage basketPage = productList.clickBasket();
